@@ -1,0 +1,112 @@
+$title-color: #fff;
+
+.footer {
+    background-image: url(../../../public/img/sparkle1.png), url(../../../public/img/sparkle2.png);
+    width: 100%;
+    height: 300px;
+    background-color: #eb288c;
+    animation: sparkle 60s linear infinite;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+
+    .logo {
+        flex: 1;
+
+        .info {
+            display: flex;
+
+            img {
+                height: 10rem;
+            }
+
+            .nameSpa {
+                color: $title-color;
+                margin: 1rem;
+
+                h4 {
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                }
+
+                h2 {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+
+        h5 {
+            margin: 2rem .6rem;
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #ddd;
+        }
+    }
+
+    .contact {
+        flex: 1;
+
+        h3 {
+            margin-bottom: 1.8rem;
+            color: $title-color;
+        }
+
+        .icon {
+            margin: auto 0;
+            margin-left: 10px;
+
+        }
+
+        .iconFacebook {
+            width: 3.6rem;
+            height: 3.6rem;
+            color: rgba($color: #0570e6, $alpha: 1.0);
+            background-color: $title-color;
+            border-radius: 50%;
+        }
+
+        .iconZalo {
+            width: 3.7rem;
+            height: 3.7rem;
+            border-radius: 50%;
+        }
+    }
+
+    .address {
+        color: #ddd;
+        flex: 1;
+
+        h3 {
+            // margin-bottom: 2rem;
+            color: $title-color;
+        }
+
+        h4 {
+            margin-bottom: 2rem;
+        }
+
+        .hotline {
+            padding: .6rem;
+            font-size: 1.8rem;
+            margin: .8rem 1rem 2rem;
+            border: 1px solid $title-color;
+            border-radius: 2rem;
+
+            &:hover {
+                color: $title-color;
+                cursor: pointer;
+            }
+        }
+    }
+
+    @keyframes sparkle {
+        0% {
+            background-position: 0px 0px, 0px 0px, 0px 0px;
+        }
+
+        100% {
+            background-position: -500px -1000px, -400px -400px, 300px 300px;
+        }
+    }
+
+}

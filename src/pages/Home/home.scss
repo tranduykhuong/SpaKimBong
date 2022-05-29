@@ -1,0 +1,129 @@
+$titleColor: #eb288c;
+
+.home {
+
+    .topService {
+        margin: 6rem auto;
+        max-width: 1200px;
+
+        h2 {
+            color: $titleColor;
+            font-size: 2.4rem;
+            margin: 2rem 0;
+        }
+
+        .serviceList {
+            display: flex;
+            justify-content: space-around;
+
+            .serviceItem {
+                margin: 1rem 0;
+
+                img {
+                    max-width: 14rem;
+                }
+
+                h4 {
+                    margin: 1rem 0;
+                }
+            }
+        }
+    }
+
+    .motto {
+        display: flex;
+        margin: 6rem auto;
+        max-width: 1200px;
+        background-color: $titleColor;
+
+        .mottoAvatar {
+            max-width: 50rem;
+            height: 100%;
+        }
+
+        .motto-content {
+            padding: 2rem;
+
+            h3 {
+                font-size: 2.6rem;
+                color: #fff;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 1.8rem;
+                color: #fff;
+                margin: 2rem 0;
+
+            }
+
+            .motto-img {
+
+                img {
+                    margin: 1rem 2rem;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .introduceSpa {
+
+        h3 {
+            display: flex;
+            margin-bottom: 1rem;
+            align-items: center;
+
+            span {
+                text-transform: uppercase;
+                font-size: 2.6rem;
+                color: $titleColor;
+                margin: 2rem;
+            }
+
+            b {
+                display: block;
+                flex: 1;
+                height: 2px;
+                background-color: #eb288c;
+                opacity: 0.4;
+            }
+        }
+
+        p {
+            font-size: 1.8rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .introList {
+            display: flex;
+            margin: 2rem 1rem;
+
+            .introItem {
+                display: flex;
+                padding: 1rem;
+                border: #ddd 1px dashed;
+                border-bottom: none;
+
+                img {
+                    max-width: 10rem;
+                    height: 10rem;
+                }
+
+                .introItemContent {
+
+                    h3 {
+                        font-weight: 400;
+                        color: $titleColor;
+                    }
+
+                    p {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

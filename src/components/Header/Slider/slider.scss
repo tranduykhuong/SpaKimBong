@@ -1,0 +1,40 @@
+.sliderInterface {
+    overflow: hidden;
+    position: relative;
+
+    .sliderList {
+        display: flex;
+        transition: transform 1s ease-in-out 0s;
+
+        .sliderItem {
+            flex: 1;
+            min-width: 100%;
+
+            img {
+                width: 100%;
+                height: 70rem;
+            }
+        }
+    }
+
+    .dots {
+        display: flex;
+        position: absolute;
+        bottom: 5.8rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .dot {
+            width: 2.2rem;
+            height: 0.6rem;
+            background-color: burlywood;
+            border-radius: 50px;
+            margin: 0 .5rem;
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: #e64d06;
+        }
+    }
+}

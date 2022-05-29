@@ -1,0 +1,140 @@
+$height-navbar: 5rem;
+
+.header {
+    .infor {
+        max-width: 1200px;
+        margin: 6px auto;
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            display: flex;
+            flex: 1;
+
+            img {
+                height: 10rem;
+            }
+
+            .nameSpa {
+                color: #eb288c;
+                margin: auto 0;
+
+                h4 {
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                }
+
+                h2 {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+
+
+        .search {
+            margin: auto 0;
+            border-radius: 50px;
+            border: solid .1rem #eb288c;
+            height: 37px;
+            display: flex;
+
+            input {
+                font-size: 1.4rem;
+                margin: auto 16px;
+                min-width: 26rem;
+                border: none;
+                outline: none;
+            }
+
+            .icon {
+                margin: auto 10px;
+                cursor: pointer;
+            }
+
+            .iconSearch {
+                width: 1.8rem;
+                height: 1.8rem;
+                color: #eb288c;
+
+                &:hover {
+                    color: #f867b2;
+                }
+            }
+        }
+
+        .contact {
+            display: flex;
+            margin-left: 20px;
+
+            .icon {
+                margin: auto 0;
+                margin-left: 10px;
+
+            }
+
+            .iconFacebook {
+                width: 2.8rem;
+                height: 2.8rem;
+                color: rgba($color: #0570e6, $alpha: 1.0);
+            }
+
+            .iconZalo {
+                width: 2.8rem;
+                height: 2.8rem;
+                border-radius: 50%;
+            }
+
+            .phone {
+                margin: auto 0;
+                margin-left: 20px;
+                display: flex;
+
+                .iconPhone {
+                    width: 2.6rem;
+                    height: 2.6rem;
+                }
+
+                h3 {
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    margin: auto 4px;
+                }
+            }
+
+        }
+    }
+
+    .myNavbar {
+        height: $height-navbar;
+        background-color: #eb288c;
+
+        .navbarContent {
+            max-width: 1200px;
+            margin: 0 auto;
+
+            .navbarList {
+                display: flex;
+                margin: 0 1rem;
+                // justify-content: space-evenly;
+
+                li {
+                    list-style: none;
+                    line-height: $height-navbar;
+                    color: #fff;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    padding: 0 16px;
+
+                    &:hover {
+                        background-color: #f844a1;
+                        cursor: pointer;
+                    }
+                }
+
+                .active {
+                    background-color: #dd0876;
+                }
+            }
+        }
+    }
+}
