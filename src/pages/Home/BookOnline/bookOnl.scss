@@ -2,7 +2,7 @@
     background-image: url('https://cdn.diemnhangroup.com/seoulspa/hlQKFOz8-group-4062.jpg');
     width: 100%;
     height: 48rem;
-    margin-bottom: 6rem;
+    margin: 6rem 0;
     padding: 5rem;
     display: flex;
     align-items: center;
@@ -37,9 +37,10 @@
                 color: #eb288c;
                 padding: .8rem;
                 max-width: 26rem;
-                margin: 0 auto;
+                margin: 0.4rem auto;
                 border-radius: 2rem;
                 text-align: center;
+                cursor: pointer;
 
                 .Icon {
                     width: 2rem;

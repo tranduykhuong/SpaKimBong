@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./footer.scss";
 import { BsFacebook } from "react-icons/bs";
+import { RiCupLine } from "react-icons/ri";
+import { VscFeedback } from "react-icons/vsc";
 
 const Footer = () => {
   return (
@@ -36,6 +38,28 @@ const Footer = () => {
         <a href="/" className="icon">
           <img src="../../img/Zalo.png" alt="" className="iconZalo" />
         </a>
+      </div>
+
+      <div className="subFooter">
+        <div className="report">
+          <RiCupLine className="icon" />
+          <div>
+            <h3>Gửi phản hồi</h3>
+            <p>Nếu có gì không hài lòng hãy phản hồi với Kim Bông</p>
+            <div className="btn">Gửi phản hồi</div>
+          </div>
+        </div>
+        <div className="feedback">
+          <VscFeedback className="icon" />
+          <div>
+            <h3>Nhận xét, Đánh giá</h3>
+            <p>
+              Nếu bạn đã đến với Spa Kim Bông, hãy để lại nhận xét cho Kim Bông
+              nhé
+            </p>
+            <div className="btn">Nhận xét ngay</div>
+          </div>
+        </div>
       </div>
     </div>
   );

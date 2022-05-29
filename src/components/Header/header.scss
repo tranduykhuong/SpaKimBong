@@ -1,9 +1,13 @@
 $height-navbar: 5rem;
 
 .header {
+    .mg-navbar {
+        margin-bottom: $height-navbar;
+    }
+
     .infor {
         max-width: 1200px;
-        margin: 6px auto;
+        padding: .6rem 0;
         display: flex;
         justify-content: space-between;
 
@@ -104,6 +108,27 @@ $height-navbar: 5rem;
         }
     }
 
+    .fixedNavbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        width: 100%;
+        animation: fixedNavbar 1s forwards;
+    }
+
+    @keyframes fixedNavbar {
+        from {
+            top: -5rem;
+            opacity: 0;
+        }
+
+        to {
+            top: 0;
+            opacity: 1;
+        }
+    }
+
     .myNavbar {
         height: $height-navbar;
         background-color: #eb288c;
@@ -119,11 +144,17 @@ $height-navbar: 5rem;
 
                 li {
                     list-style: none;
-                    line-height: $height-navbar;
-                    color: #fff;
-                    font-size: 1.6rem;
-                    font-weight: 600;
-                    padding: 0 16px;
+
+                    a {
+                        line-height: $height-navbar;
+                        height: $height-navbar;
+                        display: block;
+                        color: #fff;
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        text-decoration: none;
+                        padding: 0 2rem;
+                    }
 
                     &:hover {
                         background-color: #f844a1;

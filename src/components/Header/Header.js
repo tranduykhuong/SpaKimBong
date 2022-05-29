@@ -1,14 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./header.scss";
 import { BsSearch, BsFacebook } from "react-icons/bs";
 import { BiPhoneCall } from "react-icons/bi";
 import Slider from "./Slider/Slider";
 import ListImage from "./ListImage/ListImage";
+import { Link, useLocation } from "react-router-dom";
 
 function Header() {
+  const path = useLocation().pathname;
+  const [fixedNavbar, setFixedNavbar] = useState(false);
+
+  useEffect(() => {
+    // set fixed navbar
+    const handleScroll = () => {
+      if (window.scrollY < 1) {
+        setFixedNavbar(true);
+      }
+
+      if (window.scrollY > 170) setFixedNavbar(true);
+      else setFixedNavbar(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // cleanup function
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="header">
-      <div className="infor">
+      <div className={"infor " + (fixedNavbar ? "mg-navbar" : "")}>
         <div className="logo">
           <img src="../../img/logoSpa.png" alt="" />
           <div className="nameSpa">
@@ -38,14 +61,24 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className="myNavbar">
+      <div className={"myNavbar " + (fixedNavbar ? "fixedNavbar" : "")}>
         <div className="navbarContent">
           <ul className="navbarList">
-            <li className="active">TRANG CHỦ</li>
-            <li>GIỚI THIỆU</li>
-            <li>CHĂM SÓC DA</li>
-            <li>TRỊ MỤN</li>
-            <li>LỊCH MỞ CỬA</li>
+            <li className={path === "/" ? "active" : ""}>
+              <Link to="/">TRANG CHỦ</Link>
+            </li>
+            <li className={path === "/about" ? "active" : ""}>
+              <Link to="/about">GIỚI THIỆU</Link>
+            </li>
+            <li className={path === "/skin" ? "active" : ""}>
+              <Link to="/">CHĂM SÓC DA</Link>
+            </li>
+            <li className={path === "/acne" ? "active" : ""}>
+              <Link to="/">TRỊ MỤN</Link>
+            </li>
+            <li className={path === "/open-time" ? "active" : ""}>
+              <Link to="/">LỊCH MỞ CỬA</Link>
+            </li>
           </ul>
         </div>
       </div>

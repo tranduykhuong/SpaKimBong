@@ -1,12 +1,15 @@
 import React, { useState } from "react";
-import "./feedback.scss";
+import "./listImage.scss";
 
-const Feedback = () => {
+const ListImage = () => {
   const [angle, setAngle] = useState(0);
 
   return (
     <div>
       <div id="carousel">
+        <h2 className="title">
+          Spa Kim Bông luôn mong muốn mang dịch vụ tốt nhất đến với khách hàng
+        </h2>
         <figure id="spinner" style={{ transform: "rotateY(" + angle + "deg)" }}>
           <img
             src="https://thammyhongngoc.com/wp-content/uploads/2018/12/ruamatlamsachda-1.jpg"
@@ -70,4 +73,4 @@ const Feedback = () => {
   );
 };
 
-export default Feedback;
+export default ListImage;

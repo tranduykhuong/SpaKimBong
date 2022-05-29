@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./bookOnl.scss";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { MdOutlineMessage } from "react-icons/md";
-import ModalBook from "../Modal/ModalBook";
+import ModalBook from "./Modal/ModalBook";
 
 const BookOnline = () => {
   const [open, setOpen] = useState(false);

@@ -1,10 +1,17 @@
 div#carousel {
     perspective: 1200px;
-    background: #38011d;
-    padding: 10% 0;
+    background: #eb288c;
+    padding-bottom: 10%;
     font-size: 0;
-    margin: 4rem 0;
+    margin-top: 4rem;
     overflow: hidden;
+
+    .title {
+        color: #fff;
+        margin: 4rem 0;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+    }
 }
 
 figure#spinner {

@@ -4,10 +4,9 @@ import Header from "../../components/Header/Header";
 import Slider from "../../components/Header/Slider/Slider";
 import { Col, Row } from "react-bootstrap";
 import "./home.scss";
-import Feedback from "./Feedback/Feedback";
+import ListImage from "./ListImage/ListImage";
 import Footer from "../../components/Footer/Footer";
 import BookOnline from "./BookOnline/BookOnline";
-import ModalBook from "./Modal/ModalBook";
 
 const Home = () => {
   return (
@@ -149,7 +148,7 @@ const Home = () => {
         </div>
       </div>
 
-      <Feedback />
+      <ListImage />
 
       <BookOnline />
 
