@@ -1,0 +1,34 @@
+.ProductDescription {
+
+    .title {
+        font-size: 3rem;
+        font-weight: 600;
+        margin: 1rem 0;
+    }
+
+    .detailItem {
+        padding: 1rem 0;
+
+        .titleDetail {
+            font-size: 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 1rem 0;
+        }
+
+        .contentDetail {
+            font-size: 1.8rem;
+            color: #777;
+            padding-bottom: 1rem;
+        }
+
+        .img {
+            margin: 0 auto;
+            max-width: 60rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+@import '../../SCSS/base/variables.scss';
+
+.products {
+
+    .title {
+        padding-top: 3rem;
+        height: 10rem;
+        background-color: rgb(247, 247, 247);
+        color: $main-color;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+
+    .productContent {
+        max-width: 130rem;
+        margin: 1rem auto;
+        display: flex;
+
+        .productFilter {
+            min-width: 30rem;
+            height: 100%;
+            margin: 2rem 1rem;
+            padding: 0 2rem;
+            text-align: left;
+
+            .titleFilter {
+                text-transform: uppercase;
+                font-size: 2rem;
+            }
+
+            .line {
+                width: 6rem;
+                height: .4rem;
+                background-color: $main-color;
+                display: block;
+                margin-bottom: 2rem;
+            }
+
+            input {
+                font-size: 1.6rem;
+                border-radius: .6rem;
+                border: 1px solid #ccc;
+                width: 100%;
+                padding: .4rem .8rem;
+                outline: none;
+
+                &:focus {
+                    box-shadow: 1px 0px 4px rgba($color: #000000, $alpha: 0.4);
+                }
+            }
+
+            .filter {
+                margin: 2rem 0;
+
+                h3 {
+                    font-size: 1.8rem;
+                }
+
+                .filterPrice[type=range] {
+                    cursor: pointer;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .filterRange {
+                    display: flex;
+                    justify-content: space-between;
+
+                    p {
+                        font-size: 1.6rem;
+                    }
+
+                    .filterBtn {
+                        margin-top: 1rem;
+                        border-radius: 2rem;
+                        font-size: 1.6rem;
+                        text-align: center;
+                        line-height: 2.4rem;
+                        font-weight: 600;
+                        color: #000;
+                        height: 3rem;
+                        width: 6rem;
+                        border: 1px solid $main-color;
+
+                        &:hover {
+                            background-color: $main-color;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        .productList {
+            margin-right: 2rem;
+            padding: 0 1rem;
+        }
+    }
+}

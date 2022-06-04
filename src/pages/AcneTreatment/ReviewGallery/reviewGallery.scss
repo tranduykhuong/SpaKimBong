@@ -1,0 +1,53 @@
+@import '../../../SCSS/base/variables.scss';
+
+.galleryInterface {
+    margin-top: 3rem;
+    overflow: hidden;
+
+    .reviewList {
+        display: flex;
+        transition: all 1s ease-in-out;
+
+        .reviewItem {
+            min-width: 100%;
+            padding: 2rem 4rem;
+            text-align: center;
+            background: linear-gradient(to bottom right, #f754a8, #f7a4cf);
+
+            .content {
+                font-size: 1.8rem;
+                font-style: italic;
+                color: #fff;
+                position: relative;
+
+                .iconQuotes {
+                    position: absolute;
+                    font-size: 5rem;
+                    color: #ddd;
+                }
+
+                .open {
+                    left: -4rem;
+                    top: -2rem;
+                }
+
+                .close {
+                    right: -4rem;
+                    bottom: -1rem;
+                }
+            }
+
+            .userName {
+                font-size: 2rem;
+                font-weight: 600;
+                color: $text-color;
+            }
+
+            .avatar {
+                margin: 1rem 0;
+                border-radius: 50%;
+                width: 8rem;
+            }
+        }
+    }
+}

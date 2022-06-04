@@ -1,3 +1,4 @@
+@import '../../SCSS/base/variables.scss';
 $height-navbar: 5rem;
 
 .header {
@@ -20,7 +21,7 @@ $height-navbar: 5rem;
             }
 
             .nameSpa {
-                color: #eb288c;
+                color: $main-color;
                 margin: auto 0;
 
                 h4 {
@@ -38,7 +39,7 @@ $height-navbar: 5rem;
         .search {
             margin: auto 0;
             border-radius: 50px;
-            border: solid .1rem #eb288c;
+            border: solid .1rem $main-color;
             height: 37px;
             display: flex;
 
@@ -58,7 +59,7 @@ $height-navbar: 5rem;
             .iconSearch {
                 width: 1.8rem;
                 height: 1.8rem;
-                color: #eb288c;
+                color: $main-color;
 
                 &:hover {
                     color: #f867b2;
@@ -131,7 +132,7 @@ $height-navbar: 5rem;
 
     .myNavbar {
         height: $height-navbar;
-        background-color: #eb288c;
+        background-color: $main-color;
 
         .navbarContent {
             max-width: 1200px;

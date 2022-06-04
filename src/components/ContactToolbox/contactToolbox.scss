@@ -1,0 +1,83 @@
+.contactFixed {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 100;
+    cursor: pointer;
+
+    .toolboxScroll {
+        border-top-left-radius: 1.8rem;
+        background-color: rgba($color: #fc2c97, $alpha: 0.6);
+        width: 5rem;
+        padding: 1rem;
+        color: #fff;
+        transform: translateX(149%);
+        border-bottom: 1px solid #fff;
+
+        .iconArrow {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    .toolboxList {
+        background-color: rgba($color: #fc2c97, $alpha: 0.6);
+
+
+        .toolboxItem {
+            display: flex;
+            padding: 1.2rem;
+            color: #fff;
+
+            p {
+                font-size: 1.8rem;
+                margin: 0;
+                padding-left: 1rem;
+                font-weight: 600;
+            }
+        }
+
+        .advise {
+            border-bottom: 1px solid #fff;
+
+            .iconMessage {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+
+        .book {
+
+            .iconCalendar {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+    }
+
+    .hidden {
+        animation: toRight 0.8s linear forwards;
+    }
+
+    .open {
+        animation: toLeft 0.8s linear backwards;
+    }
+
+    @keyframes toRight {
+        to {
+            transform: translateX(62%);
+        }
+    }
+
+    @keyframes toLeft {
+        from {
+            transform: translateX(62%);
+
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+}

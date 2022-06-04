@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./header.scss";
 import { BsSearch, BsFacebook } from "react-icons/bs";
 import { BiPhoneCall } from "react-icons/bi";
-import Slider from "./Slider/Slider";
-import ListImage from "./ListImage/ListImage";
 import { Link, useLocation } from "react-router-dom";
 
 function Header() {
@@ -11,7 +9,6 @@ function Header() {
   const [fixedNavbar, setFixedNavbar] = useState(false);
 
   useEffect(() => {
-    // set fixed navbar
     const handleScroll = () => {
       if (window.scrollY < 1) {
         setFixedNavbar(true);
@@ -23,11 +20,14 @@ function Header() {
 
     window.addEventListener("scroll", handleScroll);
 
-    // cleanup function
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [path]);
 
   return (
     <div className="header">
@@ -70,11 +70,14 @@ function Header() {
             <li className={path === "/about" ? "active" : ""}>
               <Link to="/about">GIỚI THIỆU</Link>
             </li>
-            <li className={path === "/skin" ? "active" : ""}>
+            {/* <li className={path === "/skin" ? "active" : ""}>
               <Link to="/">CHĂM SÓC DA</Link>
-            </li>
+            </li> */}
             <li className={path === "/acne" ? "active" : ""}>
-              <Link to="/">TRỊ MỤN</Link>
+              <Link to="/acne">TRỊ MỤN</Link>
+            </li>
+            <li className={path === "/products" ? "active" : ""}>
+              <Link to="/products">SẢN PHẨM</Link>
             </li>
             <li className={path === "/open-time" ? "active" : ""}>
               <Link to="/">LỊCH MỞ CỬA</Link>
@@ -82,8 +85,6 @@ function Header() {
           </ul>
         </div>
       </div>
-      {/* <Slider /> */}
-      {/* <ListImage /> */}
     </div>
   );
 }

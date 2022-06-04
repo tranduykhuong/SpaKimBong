@@ -1,0 +1,99 @@
+@import '../../../SCSS/base/variables.scss';
+
+.productItem {
+    position: relative;
+    box-shadow: 1px 0px 4px rgba($color: #000000, $alpha: 0.4);
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+
+    &:hover {
+        transform: translateY(-3px);
+        transition: transform .3s;
+        cursor: pointer;
+    }
+
+    .newTemp {
+        position: absolute;
+        right: 0.4rem;
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-align: center;
+        color: rgb(233, 113, 0);
+        background-color: rgba(246, 250, 18, 0.9);
+
+        &::before {
+            content: "";
+            position: absolute;
+            border-color: transparent rgba(246, 250, 18, 0.9);
+            border-style: solid;
+            border-width: 0 2rem .8rem;
+            height: 0;
+            width: 0;
+            bottom: -.8rem;
+            left: 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+
+        img {
+            width: 100%;
+        }
+
+        .productContent {
+            margin: 0 1rem;
+            display: block;
+
+            .productName {
+                text-transform: uppercase;
+                margin: 1rem 0;
+                font-size: 1.6rem;
+                font-weight: 600;
+                text-align: left;
+            }
+
+            .procductDescription {
+                font-size: 1.4rem;
+                color: #808080;
+                text-align: left;
+                margin: 0;
+            }
+
+            .productPrice {
+                text-align: left;
+
+                .priceCurrent {
+                    margin-right: 1rem;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: #f80000;
+                }
+
+                .priceOld {
+                    color: #808080;
+                    font-size: 1.6rem;
+                    text-decoration-line: line-through;
+                }
+
+            }
+        }
+    }
+
+    .buyBtn {
+        font-size: 1.6rem;
+        border-radius: 2rem;
+        margin: 0.8rem 1rem 0 1rem;
+        height: 3rem;
+        border: 1px solid $main-color;
+        text-align: center;
+
+        &:hover {
+            background-color: $main-color;
+            color: #fff;
+        }
+    }
+}
