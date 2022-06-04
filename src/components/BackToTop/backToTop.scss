@@ -1,0 +1,29 @@
+.backToTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 100;
+    display: none;
+
+    .icon {
+        width: 4rem;
+        height: 4rem;
+        color: #fa72b8;
+        cursor: pointer;
+    }
+}
+
+.show {
+    animation: FadeIn 0.8s forwards;
+    display: block;
+
+    @keyframes FadeIn {
+        from {
+            bottom: 0;
+        }
+
+        to {
+            bottom: 2rem;
+        }
+    }
+}

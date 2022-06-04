@@ -1,10 +1,10 @@
-$title-color: #fff;
+@import '../../SCSS/base/variables.scss';
 
 .footer {
     background-image: url(../../../public/img/sparkle1.png), url(../../../public/img/sparkle2.png);
     width: 100%;
     height: 400px;
-    background-color: #eb288c;
+    background-color: $main-color;
     animation: sparkle 60s linear infinite;
     padding: 14rem 3rem 0;
     display: flex;
@@ -47,6 +47,7 @@ $title-color: #fff;
 
     .contact {
         flex: 1;
+        text-align: center;
 
         h3 {
             margin-bottom: 1.8rem;
@@ -77,6 +78,7 @@ $title-color: #fff;
     .address {
         color: #ddd;
         flex: 1;
+        text-align: center;
 
         h3 {
             // margin-bottom: 2rem;
@@ -133,16 +135,17 @@ $title-color: #fff;
             display: flex;
             flex: 1;
             justify-content: center;
+            text-align: left;
 
             h3 {
                 text-transform: uppercase;
                 font-size: 2.4rem;
-                color: #eb288c;
+                color: $main-color;
             }
 
             p {
                 font-size: 1.6rem;
-                padding: 1rem;
+                padding: 1rem 1.4rem 1rem 0;
             }
 
             .icon {
@@ -153,7 +156,7 @@ $title-color: #fff;
 
             .btn {
                 padding: 0.8rem 1.2rem;
-                background-color: #eb288c;
+                background-color: $main-color;
                 border-radius: 2rem;
                 font-size: 1.6rem;
                 color: #fff;

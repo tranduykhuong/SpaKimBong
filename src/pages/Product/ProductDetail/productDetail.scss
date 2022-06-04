@@ -1,0 +1,144 @@
+@import '../../../SCSS/base/variables.scss';
+
+.productDetail {
+    text-align: left;
+
+    .itemContent {
+        margin: 0 3rem;
+
+        .overview {
+            padding: 4rem 0;
+            margin: 0 auto;
+
+            .description {
+                padding-left: 2rem;
+
+                .productName {
+                    text-transform: uppercase;
+                    margin: 1rem 0;
+                    font-size: 3rem;
+                    font-weight: 600;
+                    text-align: left;
+                }
+
+                .procductDescription {
+                    font-size: 1.8rem;
+                    color: #808080;
+                    text-align: left;
+                    margin: 1rem 0;
+                    padding-right: 2rem;
+                }
+
+                .productPrice {
+                    text-align: left;
+
+                    .priceCurrent {
+                        margin-right: 1rem;
+                        font-size: 2.6rem;
+                        font-weight: 600;
+                        color: #f80000;
+                    }
+
+                    .priceOld {
+                        color: #808080;
+                        font-size: 1.6rem;
+                        text-decoration-line: line-through;
+                    }
+                }
+
+                .order {
+                    display: flex;
+                    margin-top: 3rem;
+
+                    .sub,
+                    .add {
+                        font-size: 2rem;
+                        line-height: 2.6rem;
+                        text-align: center;
+                        width: 3rem;
+                        border: 1px solid #ccc;
+                        background-color: #ddd;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: #ccc;
+                        }
+                    }
+
+                    .numberProducts {
+                        font-size: 1.6rem;
+                        width: 4rem;
+                        outline: none;
+                        text-align: center;
+                        border: none;
+                        box-shadow: 0.5px 0.5px 4px inset #ccc;
+
+                        &::-webkit-inner-spin-button,
+                        &::-webkit-outer-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+                    }
+
+                    .addToCart {
+                        text-transform: uppercase;
+                        padding: 0.6rem 2rem;
+                        background-color: $main-color;
+                        margin: 0 2rem;
+                        color: #fff;
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: #df0877;
+                        }
+                    }
+                }
+
+                .share {
+                    margin-top: 3rem;
+
+                    span {
+                        display: block;
+                        height: 1px;
+                        width: 70%;
+                        background-color: #ddd;
+                        margin-bottom: 1rem;
+                    }
+
+                    .iconFacebook {
+                        width: 2.8rem;
+                        height: 2.8rem;
+
+                        &:hover {
+                            color: rgba($color: #0570e6, $alpha: 1.0);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .productSame {
+
+            .title {
+                text-transform: uppercase;
+                padding: 1rem 0;
+            }
+
+            .productList {
+                margin: 0 auto;
+            }
+        }
+    }
+
+
+    .line {
+        width: 100%;
+        height: 1.5px;
+        background-color: #ccc;
+        display: block;
+        margin-top: 4rem;
+    }
+}

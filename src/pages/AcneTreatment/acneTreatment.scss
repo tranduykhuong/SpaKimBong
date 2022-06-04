@@ -1,0 +1,50 @@
+@import '../../SCSS/base/variables.scss';
+
+.acneTreatment {
+    padding: 4rem 3rem;
+    background-color: rgba($color: #ddd, $alpha: 0.3);
+
+    .content {}
+
+    .taskbar {
+        // border-left: 1px solid #ddd;
+        text-align: left;
+        height: 100;
+        background-color: #fff;
+        border-radius: 1rem;
+        padding: 2rem 2rem 0;
+        position: relative;
+
+        .titleTaskbar {
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 700;
+            padding-bottom: 0.4rem;
+            color: $main-color;
+            border-bottom: 2px solid $main-color;
+        }
+
+        .serviceList {
+            padding-left: 0;
+
+
+            .serviceItem {
+                text-transform: uppercase;
+                list-style: none;
+                border-bottom: 1px solid #ddd;
+                padding: 1rem 0 0.6rem;
+
+                a {
+                    font-size: 1.8rem;
+                    text-decoration: none;
+
+                }
+            }
+        }
+    }
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+}

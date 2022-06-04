@@ -1,0 +1,136 @@
+@import '../../../SCSS/base/variables.scss';
+
+.acneContent {
+    text-align: left;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 3rem;
+
+    .acneTitle {
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        color: $main-color;
+    }
+
+    .supportBtn {
+        max-width: 22rem;
+        background-color: $main-color;
+        border-radius: 2rem;
+        display: flex;
+        padding: 0.6rem 1rem;
+        margin: 2rem 0;
+        color: #fff;
+
+        &:hover {
+            background-color: #d11b79;
+            cursor: pointer;
+        }
+
+        h4 {
+            font-size: 1.8rem;
+            text-align: center;
+            padding-left: 1rem;
+            font-weight: 400;
+        }
+
+        .iconMessage {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
+
+    .boxMain {
+        padding: 2rem;
+        border-radius: 1.8rem;
+        border-left: 6px solid $main-color;
+        box-shadow: 1px 1px 4px rgba($color: $main-color, $alpha: 0.5);
+
+        p {
+            font-size: 1.6rem;
+            color: $text-color;
+            margin: 0;
+        }
+    }
+
+    .imgIntro,
+    .imgContent {
+        margin: 2rem auto;
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            font-size: 1.6rem;
+            text-align: center;
+            padding: 0.6rem 0;
+            font-style: italic;
+            background-color: #ddd;
+        }
+    }
+
+    .heading1 {
+        color: $main-color;
+        font-size: 2.4rem;
+    }
+
+    .heading2 {
+        font-size: 2rem;
+        color: $main-color;
+    }
+
+    .content {
+        font-size: 1.8rem;
+        color: $text-color;
+        padding: 1.2rem 0 1.4rem;
+    }
+
+    .bookBox {
+        background-color: rgb(243, 243, 243);
+        text-align: center;
+        padding: 2rem;
+        border-radius: 1.6rem;
+        margin: 2rem 0;
+        box-shadow: 3px 3px 6px rgba($color: #ddd, $alpha: 0.8);
+
+        h2 {
+            font-size: 3rem;
+            color: $main-color;
+        }
+
+        .bookBtn {
+            display: flex;
+            padding: 0.6rem 1rem;
+            max-width: 20rem;
+            justify-content: center;
+            border-radius: 2rem;
+            background: linear-gradient(to right, $main-color, #f3814d);
+            color: #fff;
+            margin: 1.8rem auto 0;
+
+            &:hover {
+                cursor: pointer;
+                background: linear-gradient(to left, $main-color, #f3814d);
+            }
+
+            h4 {
+                font-size: 1.8rem;
+                padding: 0 1rem;
+            }
+
+            .iconNote {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+
+    .contact {
+        border-left: 3px solid #ed1c24;
+        font-size: 2rem;
+        color: #ed1c24;
+        padding: 1rem 1rem 1rem 4rem;
+        margin: 4rem 0 2rem;
+    }
+}

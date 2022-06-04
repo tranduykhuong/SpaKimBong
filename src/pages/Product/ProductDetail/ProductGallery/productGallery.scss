@@ -1,0 +1,78 @@
+.productGallery {
+
+    .galleryInterface {
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+
+        .productImage {
+            display: flex;
+
+            .productImageItem {
+                min-width: 100%;
+                flex: 1;
+                transition: 1s ease;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+
+        }
+
+        &:hover .arrowLeft {
+            display: block;
+        }
+
+        &:hover .arrowRight {
+            display: block;
+        }
+
+        .arrowLeft,
+        .arrowRight {
+            width: 5rem;
+            height: 5rem;
+            color: #808080;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            display: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .arrowLeft {
+            left: 4px;
+        }
+
+        .arrowRight {
+            right: 4px;
+        }
+    }
+
+    .productThumbnails {
+        display: flex;
+        margin-right: -1rem;
+
+        .imageItem {
+            flex: 1;
+            margin: 1rem 1rem 0 0;
+            opacity: 0.6;
+
+            &:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
+
+            img {
+                width: 100%;
+
+            }
+        }
+
+        .selected {
+            opacity: 1;
+        }
+    }
+}
