@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
-import "./slider.scss";
+import "./banner.scss";
 
 let timer;
 
-const Slider = () => {
+const Banner = () => {
   const [idxSlider, setIdxSlider] = useState(0);
 
   useEffect(() => {
@@ -32,13 +31,13 @@ const Slider = () => {
         style={{ transform: "translateX(-" + idxSlider * 100 + "%)" }}
       >
         <div className="sliderItem">
-          <img src="../../img/slider1.jpg" alt="" />
-        </div>
-        <div className="sliderItem">
           <img src="../../img/slider2.jpg" alt="" />
         </div>
         <div className="sliderItem">
           <img src="../../img/slider3.jpg" alt="" />
+        </div>
+        <div className="sliderItem">
+          <img src="../../img/slider1.jpg" alt="" />
         </div>
       </div>
 
@@ -60,6 +59,4 @@ const Slider = () => {
   );
 };
 
-Slider.propTypes = {};
-
-export default Slider;
+export default Banner;

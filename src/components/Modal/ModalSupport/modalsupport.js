@@ -27,16 +27,12 @@ const ModalSupport = ({ setOpen }) => {
             </svg>
           </div>
 
-          <div className="logo">
-            <img
-              width={220}
-              height={82}
-              src="https://seoulspa.vn/wp-content/uploads/2020/12/logo-spa-1.png"
-            ></img>
-          </div>
+          {/* <div className="logo">
+            <img width={80} src="../img/logoSpa.png"></img>
+          </div> */}
 
           <div className="title">
-            Để lại số điện thoại<br></br> để được Seoulspa.vn gọi lại ngay!
+            Để lại số điện thoại<br></br> để được Kim Bông gọi lại ngay!
           </div>
 
           <div className="option">
