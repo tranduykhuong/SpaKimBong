@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import "./bookOnl.scss";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { MdOutlineMessage } from "react-icons/md";
-import ModalBook from "./Modal/ModalBook/modalbook";
-import ModalSupport from "./Modal/ModalSupport/modalsupport";
+import ModalBook from "../../../components/Modal/ModalBook/modalbook";
+import ModalSupport from "../../../components/Modal/ModalSupport/modalsupport";
 
 const BookOnline = () => {
-  const [open, setOpen] = useState(false);
-  const hanldeOpen = (isOpen) => {
-    setOpen(isOpen);
+  const [openModalBook, setOpenModalBook] = useState(false);
+  const [openModalSupport, setOpenModalSupport] = useState(false);
+  const hanldeOpenModalBook = (isOpenModalBook) => {
+    setOpenModalBook(isOpenModalBook);
+  };
+  const hanldeOpenModalSupport = (isOpenModalSupport) => {
+    setOpenModalSupport(isOpenModalSupport);
   };
   return (
     <div className="bookOnline">
@@ -19,7 +23,7 @@ const BookOnline = () => {
           <div
             className="Btn"
             onClick={() => {
-              setOpen(true);
+              setOpenModalBook(true);
             }}
           >
             <FaRegCalendarAlt className="Icon" />
@@ -30,7 +34,7 @@ const BookOnline = () => {
           <div
             className="Btn"
             onClick={() => {
-              setOpen(true);
+              setOpenModalSupport(true);
             }}
           >
             <MdOutlineMessage className="Icon" />
@@ -43,8 +47,8 @@ const BookOnline = () => {
         src="https://cdn.diemnhangroup.com/seoulspa/Nj6ZIyTn-dat-lich.png"
         alt=""
       />
-      {open && <ModalBook setOpen={hanldeOpen} />}
-      {open && <ModalSupport setOpen={hanldeOpen} />}
+      {openModalBook && <ModalBook setOpen={hanldeOpenModalBook} />}
+      {openModalSupport && <ModalSupport setOpen={hanldeOpenModalSupport} />}
     </div>
   );
 };

@@ -1,8 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Header from "../../components/Header/Header";
-import Slider from "../../components/Header/Slider/Slider";
-import { Col, Row } from "react-bootstrap";
+import Banner from "../../components/Banner/Banner";
 import "./home.scss";
 import ListImage from "./ListImage/ListImage";
 import Footer from "../../components/Footer/Footer";
@@ -11,7 +9,7 @@ import BookOnline from "./BookOnline/BookOnline";
 const Home = () => {
   return (
     <div className="home">
-      <Slider />
+      <Banner />
 
       {/* Top Services */}
       <div className="topService">

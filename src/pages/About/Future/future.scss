@@ -1,0 +1,55 @@
+.container-bg-future-orientation {
+    background-image: url("https://i.pinimg.com/originals/2c/84/5a/2c845a66b8ad2a8aafd288bdc16cd459.jpg");
+
+    .container-future-orientation {
+        display: flex;
+        width: 100%;
+        padding: 0 3rem;
+        //margin-top: 3rem;
+
+        .future-orientation-left {
+            width: 41.6666666667%;
+        }
+
+        .future-orientation-right {
+            width: 59.3333333333%;
+            padding: 3rem 3rem 3rem;
+            text-align: left;
+
+            .content {
+                h2 {
+                    color: #ffe000;
+                    font-size: 3rem;
+                    padding-bottom: 1.4rem;
+                }
+
+                p {
+                    font: 16px Roboto, sans-serif;
+                    text-align: justify;
+                    line-height: 1.6;
+                    font-weight: 500;
+                    color: #ffffff;
+                }
+            }
+
+            .box-3-image {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                margin-top: 2rem;
+
+                .box-image {
+                    box-shadow: 0 0 1rem midnightblue;
+
+                    img {
+                        // min-width: 20rem;
+                    }
+                }
+
+                .box-image:hover {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
