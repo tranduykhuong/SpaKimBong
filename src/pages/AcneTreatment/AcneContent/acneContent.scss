@@ -14,7 +14,7 @@
 
     .supportBtn {
         max-width: 22rem;
-        background-color: $main-color;
+        background: linear-gradient(to right, #eb288c, #f3814d);
         border-radius: 2rem;
         display: flex;
         padding: 0.6rem 1rem;
@@ -22,7 +22,7 @@
         color: #fff;
 
         &:hover {
-            background-color: #d11b79;
+            background: linear-gradient(to left, #eb288c, #f3814d);
             cursor: pointer;
         }
 
