@@ -1,0 +1,22 @@
+.container-calendar{
+
+    .container-bg-calendar{
+
+        .calendar{
+            display: flex;
+            width: 100%;
+            text-align: left;
+            padding: 5rem;
+
+            .calendar-content{
+                width: 30%;
+
+
+            }
+
+            .calendar-boxs{
+                width: 70%;
+            }
+        }
+    }
+}

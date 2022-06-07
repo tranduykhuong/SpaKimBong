@@ -80,7 +80,7 @@ function Header() {
               <Link to="/products">SẢN PHẨM</Link>
             </li>
             <li className={path === "/open-time" ? "active" : ""}>
-              <Link to="/">LỊCH MỞ CỬA</Link>
+              <Link to="/calendar">LỊCH MỞ CỬA</Link>
             </li>
           </ul>
         </div>
