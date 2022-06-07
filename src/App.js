@@ -10,6 +10,7 @@ import AcneTreatment from "./pages/AcneTreatment/AcneTreatment";
 import ContactToolbox from "./components/ContactToolbox/ContactToolbox";
 import BackToTop from "./components/BackToTop/BackToTop";
 import PhoneTool from "./components/PhoneTool/PhoneTool";
+import Calendar from "./pages/Calendar/Calendar";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/products" element={<Products />} />
         <Route path="/acne" element={<AcneTreatment />} />
+        <Route path="/calendar" element={<Calendar />} />
 
         <Route path="/products/1" element={<ProductDetail />} />
       </Routes>
