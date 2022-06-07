@@ -4,12 +4,12 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 
 const PhoneTool = () => {
   return (
-    <div className="phoneTool">
+    <a href="tel:1800 1010" className="phoneTool">
       <div className="phone">
         <BsFillTelephoneFill className="iconPhone" />
       </div>
       <div className="circle"></div>
-    </div>
+    </a>
   );
 };
 
