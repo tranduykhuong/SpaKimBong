@@ -8,7 +8,7 @@ const Calendar = () => {
       <div className="containercalendar">
         <div className="containercalendar__bg">
           <div className="calendar">
-            <div className="calendar__content">
+            <div className="calendar-content">
               <h3>THỜI GIAN HOẠT ĐỘNG</h3>
               <p>
                 Hiên Vân Spa bắt đầu làm việc từ 09:00 và nhận khách đợt cuối
@@ -23,7 +23,7 @@ const Calendar = () => {
               <p>Bạn muốn thư giãn ? Hãy đến với chúng tôi.</p>
             </div>
 
-            <div className="calendar__boxs-day">
+            <div className="calendar-boxs-day">
               <div className="calendar-boxs">
                 <div className="calendar-box box1">
                   <p>

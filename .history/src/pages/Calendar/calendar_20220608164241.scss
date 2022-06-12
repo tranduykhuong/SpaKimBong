@@ -57,7 +57,7 @@
 
           .calendar-box {
             margin: 0 1rem 1rem 0;
-            // width: 16rem;
+            width: 16rem;
             height: 15rem;
             background-color: #eee;
             border-radius: 20px;
@@ -66,12 +66,13 @@
             p {
               font: 40px "Roboto", sans-serif;
               opacity: 0.5;
+              // padding-left: 1.3rem;
               margin-bottom: 0;
             }
           }
           .box1 {
             background-color: rgb(243, 163, 15);
-            padding: 1rem;
+            // padding: 1rem;
 
             .times {
               font: 30px "Roboto", sans-serif;

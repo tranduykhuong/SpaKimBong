@@ -23,7 +23,7 @@ const Calendar = () => {
               <p>Bạn muốn thư giãn ? Hãy đến với chúng tôi.</p>
             </div>
 
-            <div className="calendar__boxs-day">
+            <div className="calendar-boxs-day">
               <div className="calendar-boxs">
                 <div className="calendar-box box1">
                   <p>

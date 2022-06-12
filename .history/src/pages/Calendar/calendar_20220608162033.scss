@@ -48,16 +48,16 @@
         width: 70%;
         border: solid 2px #fd80c1;
         border-radius: 20px;
+        padding: 3rem 0 2rem 5rem;
 
         .calendar-boxs {
-          padding: 3rem 0 2rem 5rem;
           display: flex;
           width: 100%;
           flex-wrap: wrap;
 
           .calendar-box {
             margin: 0 1rem 1rem 0;
-            // width: 16rem;
+            width: 16rem;
             height: 15rem;
             background-color: #eee;
             border-radius: 20px;
@@ -66,6 +66,7 @@
             p {
               font: 40px "Roboto", sans-serif;
               opacity: 0.5;
+              // padding-left: 1.3rem;
               margin-bottom: 0;
             }
           }
@@ -220,7 +221,7 @@
 
             .times {
               font: 30px "Roboto", sans-serif;
-              opacity: 0.5;
+              font-weight: 600;
               margin-bottom: 0;
             }
           }
